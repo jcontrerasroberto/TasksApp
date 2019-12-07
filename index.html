@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TasksApp</title>
+    <link rel="stylesheet" href="/home/robertocb/Cursos/TasksApp/css/bootstrap.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">TasksApp</a>
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Todas las tareas</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="container">
+      <div class="row pt-4">
+        <div class="col-md-4">
+          <div class="card bg-primary">
+            <div class="card-header">New Task</div>
+            <div class="card-body">
+              <form action="" id="formTask">
+                <div class="form-group">
+                  <input type="text" id="title" placeholder="Add a task" class="form-control">
+                </div>
+                <div class="form-group">
+                  <textarea name="" id="description" cols="30" rows="10" placeholder="Add a description" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="priority">Priority</label>
+                  <select class="form-control" id="priority" name="priority">
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                  </select>
+                </div>
+                <button class="btn btn-secondary btn-block" type="submit">
+                  Save
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div id="tasks">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="app.js">
+
+    </script>
+  </body>
+</html>
